@@ -17,4 +17,6 @@ public class CommentsController {
     public Result comments(@PathVariable("id") Long articleId) {
         return commentsService.findCommentsByArticleId(articleId);
     }
+
+
 }

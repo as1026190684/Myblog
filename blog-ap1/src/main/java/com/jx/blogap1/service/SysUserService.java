@@ -2,6 +2,7 @@ package com.jx.blogap1.service;
 
 import com.jx.blogap1.dao.pojo.SysUser;
 import com.jx.blogap1.result.Result;
+import com.jx.blogap1.vo.LoginUserVo;
 import com.jx.blogap1.vo.UserVo;
 
 public interface SysUserService {
@@ -12,6 +13,8 @@ public interface SysUserService {
 
     // 根据token查找用户信息
     Result getUserInfoByToken(String token);
+
+    SysUser getUserInfoByToken1(String token);
 
     //注册（通过account查找是否有这个用户）
     SysUser findUserByAccount(String account);

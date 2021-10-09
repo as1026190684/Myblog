@@ -86,6 +86,23 @@ public class SysUserServiceImpl implements SysUserService {
 
         return Result.success(loginUserVo);
     }
+    @Override
+    public SysUser getUserInfoByToken1(String token) {
+        Map<String, Object> map = JWTUtils.checkToken(token);
+        if (map == null){
+            return null;
+        }
+
+        String userJson = redisTemplate.opsForValue().get("TOKEN_" + token);
+        if (StringUtils.isBlank(userJson)){
+            return null;
+        }
+        SysUser sysUser = JSON.parseObject(userJson, SysUser.class);
+
+        //TODO 测试beanutils是否成功
+        return sysUser;
+    }
+
 
     /**
      * 注册（通过account查找是否有这个用户）
