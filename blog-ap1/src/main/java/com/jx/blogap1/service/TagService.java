@@ -1,5 +1,6 @@
 package com.jx.blogap1.service;
 
+import com.jx.blogap1.result.Result;
 import com.jx.blogap1.vo.TagVo;
 
 import java.util.List;
@@ -15,4 +16,13 @@ public interface TagService {
      * @return java.util.List<com.jx.blogap1.vo.TagVo>
      */
     List<TagVo> hot(int limit);
+
+    //写文章 选择标签
+    Result findAll();
+
+    //查询所有的标签
+    Result findAllDetail();
+
+    //标签文章列表
+    Result findDetailById(Long id);
 }

@@ -3,13 +3,14 @@ package com.jx.blogap1.service;
 
 import com.jx.blogap1.result.Result;
 import com.jx.blogap1.vo.ArticleVo;
+import com.jx.blogap1.vo.params.ArticleParam;
 import com.jx.blogap1.vo.params.PageParams;
 
 import java.util.List;
 
 public interface ArticleService {
 
-    List<ArticleVo> listArticlesPage(PageParams pageParams);
+    Result listArticlesPage(PageParams pageParams);
 
     //最热文章
     Result hotArticle(int limit);
@@ -22,4 +23,17 @@ public interface ArticleService {
 
     //文章详情
     ArticleVo findArticleById(Long id);
+
+    //发布文章
+    Result publish(ArticleParam articleParam);
+
+    //更新前获取文章
+    ArticleVo findArticleByIdToUpdate(Long id);
+
+    //更新文章
+    Result update(ArticleParam articleParam);
+
+    //获取个人的所有文字
+    Result getArticlesByUserId(Long id);
+
 }

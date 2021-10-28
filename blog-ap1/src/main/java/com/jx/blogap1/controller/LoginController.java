@@ -17,7 +17,6 @@ public class LoginController {
     @PostMapping
     public Result login(@RequestBody LoginParam loginParam) {
         return loginService.login(loginParam);
-
     }
 
 }

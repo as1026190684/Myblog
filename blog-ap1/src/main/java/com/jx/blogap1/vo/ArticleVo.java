@@ -28,14 +28,19 @@ public class ArticleVo {
     /**
      * 创建时间
      */
+//    @JsonSerialize(using = ToStringSerializer.class)
     private String createDate;
 
-    private String author;
+//    @JsonSerialize(using = ToStringSerializer.class)
+    private UserVo author;
 
     private ArticleBodyVo body;
 
     private List<TagVo> tags;
 
     private CategoryVo category;
+
+    private Long categoryId;
+
 
 }

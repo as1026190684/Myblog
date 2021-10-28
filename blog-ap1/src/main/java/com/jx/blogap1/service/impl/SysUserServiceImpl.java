@@ -8,22 +8,28 @@ import com.jx.blogap1.result.Result;
 import com.jx.blogap1.result.ResultCodeEnum;
 import com.jx.blogap1.service.SysUserService;
 import com.jx.blogap1.utils.JWTUtils;
+import com.jx.blogap1.utils.RedisDBChangeUtil;
+import com.jx.blogap1.utils.UserThreadLocal;
 import com.jx.blogap1.vo.LoginUserVo;
 import com.jx.blogap1.vo.UserVo;
+import com.jx.blogap1.vo.params.FilePath;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 @Service
 public class SysUserServiceImpl implements SysUserService {
 
     @Autowired
     private SysUserMapper sysUserMapper;
-
+    @Autowired
+    private RedisDBChangeUtil redisDBChangeUtil;
     @Autowired
     private RedisTemplate<String, String> redisTemplate;
 
@@ -88,6 +94,7 @@ public class SysUserServiceImpl implements SysUserService {
     }
     @Override
     public SysUser getUserInfoByToken1(String token) {
+
         Map<String, Object> map = JWTUtils.checkToken(token);
         if (map == null){
             return null;
@@ -158,5 +165,35 @@ public class SysUserServiceImpl implements SysUserService {
         BeanUtils.copyProperties(sysUser, userVo);
 
         return userVo;
+    }
+
+    //todo 事务是否能解决更新期间正好token过期问题,是否能直接更新  redis value
+    @Override
+    @Transactional
+    public Result updateUserAvatarByToken(FilePath filePath, String token) {
+        SysUser sysUser = UserThreadLocal.get();
+
+        System.out.println("sysUser.getAvatar()"+sysUser.getAvatar());
+        System.out.println("filePath"+filePath);
+        sysUser.setAvatar(filePath.getFilePath());
+        String key = "TOKEN_" + token;
+
+        LambdaQueryWrapper<SysUser> sysUserLambdaQueryWrapper = new LambdaQueryWrapper<>();
+        sysUserLambdaQueryWrapper.eq(SysUser::getId, sysUser.getId());
+
+        SysUser sysUserNew = new SysUser();
+        sysUserNew.setAvatar(filePath.getFilePath());
+
+        int update = sysUserMapper.update(sysUserNew, sysUserLambdaQueryWrapper);
+        if (1 == update) {
+            boolean b = redisDBChangeUtil.hasKey(key);
+            if (b) {
+                redisDBChangeUtil.del(key);
+                boolean set = redisDBChangeUtil.set(key, JSON.toJSONString(sysUser), 12 * 60 * 60 );
+
+                return Result.success(set);
+            }
+        }
+        return Result.fail(update);
     }
 }

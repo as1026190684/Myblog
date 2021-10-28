@@ -2,6 +2,8 @@ package com.jx.blogap1.dao.mapper;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.jx.blogap1.dao.dos.Archives;
 import com.jx.blogap1.dao.pojo.Article;
 import org.springframework.stereotype.Repository;
@@ -18,4 +20,7 @@ public interface ArticleMapper extends BaseMapper<Article> {
 
     //文章归档
     List<Archives> listArchives();
+
+    //文章列表
+    IPage<Article> listArticle(Page<Article> page, Long categoryId, Long tagId, String year, String month);
 }

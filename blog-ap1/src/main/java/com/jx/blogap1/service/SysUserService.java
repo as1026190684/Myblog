@@ -4,6 +4,7 @@ import com.jx.blogap1.dao.pojo.SysUser;
 import com.jx.blogap1.result.Result;
 import com.jx.blogap1.vo.LoginUserVo;
 import com.jx.blogap1.vo.UserVo;
+import com.jx.blogap1.vo.params.FilePath;
 
 public interface SysUserService {
     SysUser findUserById(Long id);
@@ -25,4 +26,6 @@ public interface SysUserService {
     //评论（通过评论者id和给谁评论的toUid来查找对应用户的id，头像，名称等）
     UserVo findUserVoById(Long id);
 
+    //更新用户头像
+    Result updateUserAvatarByToken(FilePath filePath, String token);
 }

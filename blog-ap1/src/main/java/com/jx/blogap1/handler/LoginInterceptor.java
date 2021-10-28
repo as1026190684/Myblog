@@ -41,7 +41,6 @@ public class LoginInterceptor implements HandlerInterceptor {
         log.info("request uri:{}",requestURI);
         log.info("request method:{}",request.getMethod());
         log.info("token:{}", token);
-        log.error("=====error=====");
         log.info("=================request end===========================");
 
 

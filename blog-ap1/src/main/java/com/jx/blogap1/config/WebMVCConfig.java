@@ -27,9 +27,17 @@ public class WebMVCConfig implements WebMvcConfigurer {
                 .allowedOrigins("*");
     }
 
+    //todo 个人中心修改头像如何加上登陆限制
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(loginInterceptor)
-                .addPathPatterns("/test").addPathPatterns("/comments/create/change");
+                .addPathPatterns("/test")
+                .addPathPatterns("/comments/create/change")
+                .addPathPatterns("/clockIn")
+                .addPathPatterns("/clockIn/putPlanToRedis")
+                .addPathPatterns("/clockIn/queryPlanCache")
+                .addPathPatterns("/articles/publish")
+                .addPathPatterns("/articles/update")
+                .addPathPatterns("/users/updateAvatar");
     }
 }

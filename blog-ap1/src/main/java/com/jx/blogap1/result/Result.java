@@ -1,6 +1,7 @@
 package com.jx.blogap1.result;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
 
@@ -19,6 +20,8 @@ public class Result<T> {
 
 
     private T data;
+
+    private boolean success;
 
     public Result(){}
 
@@ -82,6 +85,7 @@ public class Result<T> {
         this.setCode(code);
         return this;
     }
+
 
     public boolean isSuccess() {
         if(this.getCode().intValue() == ResultCodeEnum.SUCCESS.getCode().intValue()) {

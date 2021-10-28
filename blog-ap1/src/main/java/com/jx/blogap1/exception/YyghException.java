@@ -10,6 +10,7 @@ import lombok.Data;
  *
  * @author qy
  */
+//todo 异常类的作用
 @Data
 public class YyghException extends RuntimeException {
 

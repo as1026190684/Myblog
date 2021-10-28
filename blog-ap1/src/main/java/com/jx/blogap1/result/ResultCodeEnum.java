@@ -1,5 +1,6 @@
 package com.jx.blogap1.result;
 
+import com.qiniu.common.QiniuException;
 import lombok.Getter;
 
 /**
@@ -52,10 +53,26 @@ public enum ResultCodeEnum {
     ACCOUNT_PWD_NOT_EXIST(10002,"用户名或密码不存在"),
     TOKEN_ERROR(10003,"token不合法"),
     ACCOUNT_EXIST(10004,"账号已存在"),
+    UP_LOAD_ERROR(20001, "上传失败"),
+
+    NO_CLOCK_IN(3001,"您未曾打过卡"),
+    CLOCK_IN_ERROR(3002, "打卡缓存错误"),
+
+    PERSONAL_ERROR(4001, "您还未发布过文章"),
+
+
     NO_PERMISSION(70001,"无访问权限"),
     SESSION_TIME_OUT(90001,"会话超时"),
     NO_LOGIN(90002,"未登录"),
-    NO_CLOCK_IN(90003,"您未曾打过卡")
+
+    TOKEN_EXPIRED(90005, "token过期或未登录，请重新登录"),
+    CONTENT_IS_EMPTY(90006, "内容不能为空"),
+    ALREADY_CLOCK_IN(90007,"今天已经打过卡啦,不能再次打卡咯(*^▽^*)"),
+    INVITE_CODE(90008,"邀请码不正确"),
+
+
+    Qi_Niu_Exception(30001,"七牛error，无此头像"),
+    Qi_Niu_Error(30002,"头像格式错误"),
     ;
 
     private Integer code;

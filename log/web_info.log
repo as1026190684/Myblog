@@ -1,280 +1,39 @@
-2021-10-06 00:45:00.628 [main] INFO  com.jx.blogap1.BlogAp1Application - Starting BlogAp1Application using Java 1.8.0_144 on WIN-5RFHU8DBTR7 with PID 14824 (D:\向着架构师冲击\项目\blog-parent1\blog-ap1\target\classes started by Administrator in D:\向着架构师冲击\项目\blog-parent1)
-2021-10-06 00:45:00.640 [main] INFO  com.jx.blogap1.BlogAp1Application - No active profile set, falling back to default profiles: default
-2021-10-06 00:45:01.965 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-10-06 00:45:01.970 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-10-06 00:45:02.032 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 0 Redis repository interfaces.
-2021-10-06 00:45:02.919 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.jx.blogap1.config.RedisConfig$$EnhancerBySpringCGLIB$$397fe09d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-06 00:45:03.777 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2021-10-06 00:45:03.800 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2021-10-06 00:45:03.805 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-10-06 00:45:03.806 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
-2021-10-06 00:45:04.054 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-10-06 00:45:04.054 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3369 ms
-2021-10-06 00:45:07.716 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2021-10-06 00:45:07.734 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2021-10-06 00:45:07.743 [main] INFO  com.jx.blogap1.BlogAp1Application - Started BlogAp1Application in 8.713 seconds (JVM running for 11.247)
-2021-10-06 00:46:00.453 [main] INFO  com.jx.blogap1.BlogAp1Application - Starting BlogAp1Application using Java 1.8.0_144 on WIN-5RFHU8DBTR7 with PID 24304 (D:\向着架构师冲击\项目\blog-parent1\blog-ap1\target\classes started by Administrator in D:\向着架构师冲击\项目\blog-parent1)
-2021-10-06 00:46:00.456 [main] INFO  com.jx.blogap1.BlogAp1Application - No active profile set, falling back to default profiles: default
-2021-10-06 00:46:01.308 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-10-06 00:46:01.311 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-10-06 00:46:01.349 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
-2021-10-06 00:46:01.718 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.jx.blogap1.config.RedisConfig$$EnhancerBySpringCGLIB$$5fdb8d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-06 00:46:02.024 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2021-10-06 00:46:02.035 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2021-10-06 00:46:02.035 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-10-06 00:46:02.036 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
-2021-10-06 00:46:02.176 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-10-06 00:46:02.176 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1674 ms
-2021-10-06 00:46:05.143 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2021-10-06 00:46:05.160 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2021-10-06 00:46:05.169 [main] INFO  com.jx.blogap1.BlogAp1Application - Started BlogAp1Application in 5.501 seconds (JVM running for 7.555)
-2021-10-06 00:46:12.980 [http-nio-8888-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-10-06 00:46:12.980 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-10-06 00:46:12.981 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2021-10-06 00:47:28.801 [main] INFO  com.jx.blogap1.BlogAp1Application - Starting BlogAp1Application using Java 1.8.0_144 on WIN-5RFHU8DBTR7 with PID 14668 (D:\向着架构师冲击\项目\blog-parent1\blog-ap1\target\classes started by Administrator in D:\向着架构师冲击\项目\blog-parent1)
-2021-10-06 00:47:28.804 [main] INFO  com.jx.blogap1.BlogAp1Application - No active profile set, falling back to default profiles: default
-2021-10-06 00:47:30.278 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-10-06 00:47:30.289 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-10-06 00:47:30.430 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
-2021-10-06 00:47:30.791 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.jx.blogap1.config.RedisConfig$$EnhancerBySpringCGLIB$$24538d11] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-06 00:47:31.065 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2021-10-06 00:47:31.072 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2021-10-06 00:47:31.073 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-10-06 00:47:31.073 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
-2021-10-06 00:47:31.209 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-10-06 00:47:31.209 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2265 ms
-2021-10-06 00:47:33.823 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2021-10-06 00:47:33.837 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2021-10-06 00:47:33.847 [main] INFO  com.jx.blogap1.BlogAp1Application - Started BlogAp1Application in 6.942 seconds (JVM running for 8.871)
-2021-10-06 00:47:44.710 [http-nio-8888-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-10-06 00:47:44.711 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-10-06 00:47:44.714 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2021-10-06 00:47:44.838 [http-nio-8888-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-10-06 00:47:45.085 [http-nio-8888-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2021-10-06 00:48:26.552 [main] INFO  com.jx.blogap1.BlogAp1Application - Starting BlogAp1Application using Java 1.8.0_144 on WIN-5RFHU8DBTR7 with PID 22944 (D:\向着架构师冲击\项目\blog-parent1\blog-ap1\target\classes started by Administrator in D:\向着架构师冲击\项目\blog-parent1)
-2021-10-06 00:48:26.554 [main] INFO  com.jx.blogap1.BlogAp1Application - No active profile set, falling back to default profiles: default
-2021-10-06 00:48:27.601 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-10-06 00:48:27.603 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-10-06 00:48:27.633 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
-2021-10-06 00:48:27.958 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.jx.blogap1.config.RedisConfig$$EnhancerBySpringCGLIB$$a5e50d64] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-06 00:48:28.226 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2021-10-06 00:48:28.233 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2021-10-06 00:48:28.233 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-10-06 00:48:28.233 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
-2021-10-06 00:48:28.343 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-10-06 00:48:28.344 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1692 ms
-2021-10-06 00:48:31.451 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2021-10-06 00:48:31.474 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2021-10-06 00:48:31.485 [main] INFO  com.jx.blogap1.BlogAp1Application - Started BlogAp1Application in 5.62 seconds (JVM running for 7.166)
-2021-10-06 00:48:33.144 [http-nio-8888-exec-5] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-10-06 00:48:33.145 [http-nio-8888-exec-5] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-10-06 00:48:33.147 [http-nio-8888-exec-5] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2021-10-06 00:50:48.432 [main] INFO  com.jx.blogap1.BlogAp1Application - Starting BlogAp1Application using Java 1.8.0_144 on WIN-5RFHU8DBTR7 with PID 1744 (D:\向着架构师冲击\项目\blog-parent1\blog-ap1\target\classes started by Administrator in D:\向着架构师冲击\项目\blog-parent1)
-2021-10-06 00:50:48.435 [main] INFO  com.jx.blogap1.BlogAp1Application - No active profile set, falling back to default profiles: default
-2021-10-06 00:50:49.370 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-10-06 00:50:49.377 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-10-06 00:50:49.434 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
-2021-10-06 00:50:49.808 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.jx.blogap1.config.RedisConfig$$EnhancerBySpringCGLIB$$7c5e2da] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-06 00:50:50.058 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2021-10-06 00:50:50.067 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2021-10-06 00:50:50.068 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-10-06 00:50:50.068 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
-2021-10-06 00:50:50.174 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-10-06 00:50:50.175 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1706 ms
-2021-10-06 00:50:52.734 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
-2021-10-06 00:50:52.749 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2021-10-06 00:52:03.214 [main] INFO  com.jx.blogap1.BlogAp1Application - Starting BlogAp1Application using Java 1.8.0_144 on WIN-5RFHU8DBTR7 with PID 25244 (D:\向着架构师冲击\项目\blog-parent1\blog-ap1\target\classes started by Administrator in D:\向着架构师冲击\项目\blog-parent1)
-2021-10-06 00:52:03.228 [main] INFO  com.jx.blogap1.BlogAp1Application - No active profile set, falling back to default profiles: default
-2021-10-06 00:52:04.294 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-10-06 00:52:04.296 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-10-06 00:52:04.335 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
-2021-10-06 00:52:04.692 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.jx.blogap1.config.RedisConfig$$EnhancerBySpringCGLIB$$7c5e2da] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-06 00:52:04.969 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2021-10-06 00:52:04.978 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2021-10-06 00:52:04.979 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-10-06 00:52:04.979 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
-2021-10-06 00:52:05.232 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-10-06 00:52:05.232 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1944 ms
-2021-10-06 00:52:07.508 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
-2021-10-06 00:52:07.518 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2021-10-06 00:55:23.171 [main] INFO  com.jx.blogap1.BlogAp1Application - Starting BlogAp1Application using Java 1.8.0_144 on WIN-5RFHU8DBTR7 with PID 21228 (D:\向着架构师冲击\项目\blog-parent1\blog-ap1\target\classes started by Administrator in D:\向着架构师冲击\项目\blog-parent1)
-2021-10-06 00:55:23.173 [main] INFO  com.jx.blogap1.BlogAp1Application - No active profile set, falling back to default profiles: default
-2021-10-06 00:55:23.952 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-10-06 00:55:23.956 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-10-06 00:55:23.987 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
-2021-10-06 00:55:24.269 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.jx.blogap1.config.RedisConfig$$EnhancerBySpringCGLIB$$def0d49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-06 00:55:24.504 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2021-10-06 00:55:24.511 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2021-10-06 00:55:24.511 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-10-06 00:55:24.511 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
-2021-10-06 00:55:24.624 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-10-06 00:55:24.624 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1369 ms
-2021-10-06 00:55:27.151 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2021-10-06 00:55:27.167 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2021-10-06 00:55:27.176 [main] INFO  com.jx.blogap1.BlogAp1Application - Started BlogAp1Application in 4.713 seconds (JVM running for 6.307)
-2021-10-06 00:55:36.289 [http-nio-8888-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-10-06 00:55:36.289 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-10-06 00:55:36.290 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2021-10-06 00:55:36.352 [http-nio-8888-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-10-06 00:55:36.551 [http-nio-8888-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2021-10-06 00:56:44.807 [main] INFO  com.jx.blogap1.BlogAp1Application - Starting BlogAp1Application using Java 1.8.0_144 on WIN-5RFHU8DBTR7 with PID 22788 (D:\向着架构师冲击\项目\blog-parent1\blog-ap1\target\classes started by Administrator in D:\向着架构师冲击\项目\blog-parent1)
-2021-10-06 00:56:44.809 [main] INFO  com.jx.blogap1.BlogAp1Application - No active profile set, falling back to default profiles: default
-2021-10-06 00:56:45.664 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-10-06 00:56:45.668 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-10-06 00:56:45.703 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-2021-10-06 00:56:46.039 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.jx.blogap1.config.RedisConfig$$EnhancerBySpringCGLIB$$78bb46c6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-06 00:56:46.274 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2021-10-06 00:56:46.281 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2021-10-06 00:56:46.281 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-10-06 00:56:46.281 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
-2021-10-06 00:56:46.387 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-10-06 00:56:46.387 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1511 ms
-2021-10-06 00:56:49.268 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2021-10-06 00:56:49.284 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2021-10-06 00:56:49.303 [main] INFO  com.jx.blogap1.BlogAp1Application - Started BlogAp1Application in 5.187 seconds (JVM running for 6.681)
-2021-10-06 00:56:52.143 [http-nio-8888-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-10-06 00:56:52.144 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-10-06 00:56:52.146 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2021-10-06 00:56:52.223 [http-nio-8888-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-10-06 00:56:52.450 [http-nio-8888-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2021-10-06 09:39:50.588 [main] INFO  com.jx.blogap1.BlogAp1Application - Starting BlogAp1Application using Java 1.8.0_144 on WIN-5RFHU8DBTR7 with PID 12500 (D:\向着架构师冲击\项目\blog-parent1\blog-ap1\target\classes started by Administrator in D:\向着架构师冲击\项目\blog-parent1)
-2021-10-06 09:39:50.590 [main] INFO  com.jx.blogap1.BlogAp1Application - No active profile set, falling back to default profiles: default
-2021-10-06 09:39:51.565 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-10-06 09:39:51.569 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-10-06 09:39:51.601 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
-2021-10-06 09:39:51.970 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.jx.blogap1.config.RedisConfig$$EnhancerBySpringCGLIB$$62f1ee55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-06 09:39:52.455 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2021-10-06 09:39:52.464 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2021-10-06 09:39:52.465 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-10-06 09:39:52.465 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
-2021-10-06 09:39:52.619 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-10-06 09:39:52.619 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1993 ms
-2021-10-06 09:39:55.664 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2021-10-06 09:39:55.679 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2021-10-06 09:39:55.687 [main] INFO  com.jx.blogap1.BlogAp1Application - Started BlogAp1Application in 5.683 seconds (JVM running for 7.336)
-2021-10-06 09:39:57.486 [http-nio-8888-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-10-06 09:39:57.487 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-10-06 09:39:57.489 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2021-10-06 09:39:57.566 [http-nio-8888-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-10-06 09:39:58.731 [http-nio-8888-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-10-06 09:39:59.736 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-10-06 09:40:00.742 [http-nio-8888-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-10-06 09:40:01.744 [http-nio-8888-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-10-06 09:40:25.778 [http-nio-8888-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-10-06 09:40:25.808 [http-nio-8888-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2021-10-06 09:44:47.328 [main] INFO  com.jx.blogap1.BlogAp1Application - Starting BlogAp1Application using Java 1.8.0_144 on WIN-5RFHU8DBTR7 with PID 9872 (D:\向着架构师冲击\项目\blog-parent1\blog-ap1\target\classes started by Administrator in D:\向着架构师冲击\项目\blog-parent1)
-2021-10-06 09:44:47.330 [main] INFO  com.jx.blogap1.BlogAp1Application - No active profile set, falling back to default profiles: default
-2021-10-06 09:44:48.082 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-10-06 09:44:48.087 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-10-06 09:44:48.114 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
-2021-10-06 09:44:48.356 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.jx.blogap1.config.RedisConfig$$EnhancerBySpringCGLIB$$5bbae92f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-06 09:44:48.562 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2021-10-06 09:44:48.578 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2021-10-06 09:44:48.579 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-10-06 09:44:48.580 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
-2021-10-06 09:44:48.718 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
-2021-10-06 09:44:48.718 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1351 ms
-2021-10-06 09:44:51.045 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2021-10-06 09:44:51.060 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
-2021-10-06 09:44:51.068 [main] INFO  com.jx.blogap1.BlogAp1Application - Started BlogAp1Application in 4.227 seconds (JVM running for 5.545)
-2021-10-06 09:45:03.751 [http-nio-8888-exec-4] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-10-06 09:45:03.751 [http-nio-8888-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-10-06 09:45:03.752 [http-nio-8888-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2021-10-06 09:45:32.188 [http-nio-8888-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-10-06 09:45:32.353 [http-nio-8888-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2021-10-06 10:08:11.458 [main] INFO  com.jx.blogap1.BlogAp1ApplicationTests - Starting BlogAp1ApplicationTests using Java 1.8.0_144 on WIN-5RFHU8DBTR7 with PID 9560 (started by Administrator in D:\向着架构师冲击\项目\blog-parent1\blog-ap1)
-2021-10-06 10:08:11.461 [main] INFO  com.jx.blogap1.BlogAp1ApplicationTests - No active profile set, falling back to default profiles: default
-2021-10-06 10:08:12.102 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-10-06 10:08:12.106 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-10-06 10:08:12.136 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
-2021-10-06 10:08:12.641 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.jx.blogap1.config.RedisConfig$$EnhancerBySpringCGLIB$$ff4cbb02] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-06 10:08:15.550 [main] INFO  com.jx.blogap1.BlogAp1ApplicationTests - Started BlogAp1ApplicationTests in 4.476 seconds (JVM running for 5.428)
-2021-10-06 10:34:24.799 [main] INFO  com.jx.blogap1.BlogAp1Application - Starting BlogAp1Application using Java 1.8.0_144 on WIN-5RFHU8DBTR7 with PID 15516 (D:\向着架构师冲击\项目\blog-parent1\blog-ap1\target\classes started by Administrator in D:\向着架构师冲击\项目\blog-parent1)
-2021-10-06 10:34:24.801 [main] INFO  com.jx.blogap1.BlogAp1Application - No active profile set, falling back to default profiles: default
-2021-10-06 10:34:25.543 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-10-06 10:34:25.546 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-10-06 10:34:25.579 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
-2021-10-06 10:34:25.894 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.jx.blogap1.config.RedisConfig$$EnhancerBySpringCGLIB$$def0d49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-06 10:34:26.121 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2021-10-06 10:34:26.127 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2021-10-06 10:34:26.128 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-10-06 10:34:26.128 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
-2021-10-06 10:34:26.239 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
-2021-10-06 10:34:26.239 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1358 ms
-2021-10-06 10:34:28.666 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2021-10-06 10:34:28.681 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
-2021-10-06 10:34:28.690 [main] INFO  com.jx.blogap1.BlogAp1Application - Started BlogAp1Application in 4.568 seconds (JVM running for 6.135)
-2021-10-06 10:41:13.805 [http-nio-8888-exec-5] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-10-06 10:41:13.806 [http-nio-8888-exec-5] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-10-06 10:41:13.807 [http-nio-8888-exec-5] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2021-10-06 10:41:13.875 [http-nio-8888-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-10-06 10:41:14.060 [http-nio-8888-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2021-10-06 10:57:57.352 [main] INFO  com.jx.blogap1.BlogAp1Application - Starting BlogAp1Application using Java 1.8.0_144 on WIN-5RFHU8DBTR7 with PID 6676 (D:\向着架构师冲击\项目\blog-parent1\blog-ap1\target\classes started by Administrator in D:\向着架构师冲击\项目\blog-parent1)
-2021-10-06 10:57:57.354 [main] INFO  com.jx.blogap1.BlogAp1Application - No active profile set, falling back to default profiles: default
-2021-10-06 10:57:58.104 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-10-06 10:57:58.107 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-10-06 10:57:58.132 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
-2021-10-06 10:57:58.397 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.jx.blogap1.config.RedisConfig$$EnhancerBySpringCGLIB$$2ae65730] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-06 10:57:58.595 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2021-10-06 10:57:58.604 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2021-10-06 10:57:58.605 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-10-06 10:57:58.605 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
-2021-10-06 10:57:58.698 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
-2021-10-06 10:57:58.699 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1298 ms
-2021-10-06 10:58:00.824 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2021-10-06 10:58:00.838 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
-2021-10-06 10:58:00.846 [main] INFO  com.jx.blogap1.BlogAp1Application - Started BlogAp1Application in 4.067 seconds (JVM running for 5.405)
-2021-10-06 10:58:22.152 [http-nio-8888-exec-3] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-10-06 10:58:22.152 [http-nio-8888-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-10-06 10:58:22.153 [http-nio-8888-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2021-10-06 10:59:24.260 [main] INFO  com.jx.blogap1.BlogAp1Application - Starting BlogAp1Application using Java 1.8.0_144 on WIN-5RFHU8DBTR7 with PID 7664 (D:\向着架构师冲击\项目\blog-parent1\blog-ap1\target\classes started by Administrator in D:\向着架构师冲击\项目\blog-parent1)
-2021-10-06 10:59:24.262 [main] INFO  com.jx.blogap1.BlogAp1Application - No active profile set, falling back to default profiles: default
-2021-10-06 10:59:24.922 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-10-06 10:59:24.925 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-10-06 10:59:24.953 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-2021-10-06 10:59:25.185 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.jx.blogap1.config.RedisConfig$$EnhancerBySpringCGLIB$$33af1fdb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-06 10:59:25.381 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2021-10-06 10:59:25.389 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2021-10-06 10:59:25.389 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-10-06 10:59:25.390 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
-2021-10-06 10:59:25.488 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
-2021-10-06 10:59:25.488 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1190 ms
-2021-10-06 10:59:27.796 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2021-10-06 10:59:27.811 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
-2021-10-06 10:59:27.820 [main] INFO  com.jx.blogap1.BlogAp1Application - Started BlogAp1Application in 4.071 seconds (JVM running for 5.33)
-2021-10-06 10:59:32.202 [http-nio-8888-exec-4] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-10-06 10:59:32.203 [http-nio-8888-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-10-06 10:59:32.204 [http-nio-8888-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2021-10-06 10:59:32.281 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-10-06 10:59:32.454 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2021-10-06 11:00:07.118 [main] INFO  com.jx.blogap1.BlogAp1Application - Starting BlogAp1Application using Java 1.8.0_144 on WIN-5RFHU8DBTR7 with PID 15824 (D:\向着架构师冲击\项目\blog-parent1\blog-ap1\target\classes started by Administrator in D:\向着架构师冲击\项目\blog-parent1)
-2021-10-06 11:00:07.121 [main] INFO  com.jx.blogap1.BlogAp1Application - No active profile set, falling back to default profiles: default
-2021-10-06 11:00:07.753 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-10-06 11:00:07.756 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-10-06 11:00:07.785 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
-2021-10-06 11:00:08.082 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.jx.blogap1.config.RedisConfig$$EnhancerBySpringCGLIB$$ff55ee7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-06 11:00:08.418 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2021-10-06 11:00:08.424 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2021-10-06 11:00:08.424 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-10-06 11:00:08.424 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
-2021-10-06 11:00:08.519 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
-2021-10-06 11:00:08.519 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1329 ms
-2021-10-06 11:00:10.767 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2021-10-06 11:00:10.781 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
-2021-10-06 11:00:10.790 [main] INFO  com.jx.blogap1.BlogAp1Application - Started BlogAp1Application in 4.342 seconds (JVM running for 5.571)
-2021-10-06 11:00:14.468 [http-nio-8888-exec-5] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-10-06 11:00:14.468 [http-nio-8888-exec-5] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-10-06 11:00:14.469 [http-nio-8888-exec-5] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2021-10-06 11:00:14.543 [http-nio-8888-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-10-06 11:00:14.695 [http-nio-8888-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2021-10-06 11:01:14.919 [main] INFO  com.jx.blogap1.BlogAp1ApplicationTests - Starting BlogAp1ApplicationTests using Java 1.8.0_144 on WIN-5RFHU8DBTR7 with PID 15560 (started by Administrator in D:\向着架构师冲击\项目\blog-parent1\blog-ap1)
-2021-10-06 11:01:14.923 [main] INFO  com.jx.blogap1.BlogAp1ApplicationTests - No active profile set, falling back to default profiles: default
-2021-10-06 11:01:15.628 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-10-06 11:01:15.632 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-10-06 11:01:15.660 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-2021-10-06 11:01:16.192 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.jx.blogap1.config.RedisConfig$$EnhancerBySpringCGLIB$$1290c35d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-06 11:01:19.264 [main] INFO  com.jx.blogap1.BlogAp1ApplicationTests - Started BlogAp1ApplicationTests in 4.721 seconds (JVM running for 5.643)
+2021-10-24 17:49:57.880 [main] INFO  com.jx.blogap1.BlogAp1Application - Starting BlogAp1Application using Java 1.8.0_144 on WIN-5RFHU8DBTR7 with PID 9036 (D:\向着架构师冲击\项目\blog-parent1\blog-ap1\target\classes started by Administrator in D:\向着架构师冲击\项目\blog-parent1)
+2021-10-24 17:49:57.877 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2021-10-24 17:49:57.883 [main] INFO  com.jx.blogap1.BlogAp1Application - No active profile set, falling back to default profiles: default
+2021-10-24 17:49:59.392 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-24 17:49:59.397 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-10-24 17:49:59.436 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2021-10-24 17:49:59.932 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.jx.blogap1.config.RedisConfig$$EnhancerBySpringCGLIB$$f16f06ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-24 17:50:00.527 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2021-10-24 17:50:00.544 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2021-10-24 17:50:00.545 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-10-24 17:50:00.546 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-24 17:50:00.831 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2021-10-24 17:50:00.832 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2831 ms
+2021-10-24 17:50:07.433 [main] INFO  com.jx.blogap1.config.RedisConfig - 初始化 -> [Redis CacheErrorHandler]
+2021-10-24 17:50:08.646 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2021-10-24 17:50:08.667 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
+2021-10-24 17:50:08.682 [main] INFO  com.jx.blogap1.BlogAp1Application - Started BlogAp1Application in 11.366 seconds (JVM running for 13.045)
+2021-10-24 17:50:14.767 [http-nio-8888-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-24 17:50:14.767 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-10-24 17:50:14.769 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-10-24 17:50:23.021 [http-nio-8888-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-10-24 17:50:23.443 [http-nio-8888-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-10-24 18:21:48.259 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2021-10-24 18:21:48.259 [main] INFO  com.jx.blogap1.BlogAp1Application - Starting BlogAp1Application using Java 1.8.0_144 on WIN-5RFHU8DBTR7 with PID 16192 (D:\向着架构师冲击\项目\blog-parent1\blog-ap1\target\classes started by Administrator in D:\向着架构师冲击\项目\blog-parent1)
+2021-10-24 18:21:48.261 [main] INFO  com.jx.blogap1.BlogAp1Application - No active profile set, falling back to default profiles: default
+2021-10-24 18:21:49.077 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-24 18:21:49.080 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-10-24 18:21:49.113 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2021-10-24 18:21:49.406 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.jx.blogap1.config.RedisConfig$$EnhancerBySpringCGLIB$$d312b02] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-24 18:21:49.638 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2021-10-24 18:21:49.657 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2021-10-24 18:21:49.658 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-10-24 18:21:49.659 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-24 18:21:49.799 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2021-10-24 18:21:49.799 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1498 ms
+2021-10-24 18:21:51.893 [main] INFO  com.jx.blogap1.config.RedisConfig - 初始化 -> [Redis CacheErrorHandler]
+2021-10-24 18:21:52.832 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2021-10-24 18:21:52.858 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
+2021-10-24 18:21:52.875 [main] INFO  com.jx.blogap1.BlogAp1Application - Started BlogAp1Application in 5.281 seconds (JVM running for 6.728)

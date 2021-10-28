@@ -12,4 +12,6 @@ public class LoginParam implements Serializable {
     private String password;
 
     private String nickname;
+
+    private String inviteCode;
 }

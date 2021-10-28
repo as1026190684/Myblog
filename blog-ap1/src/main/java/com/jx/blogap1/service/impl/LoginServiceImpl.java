@@ -9,10 +9,11 @@ import com.jx.blogap1.service.SysUserService;
 import com.jx.blogap1.utils.JWTUtils;
 import com.jx.blogap1.vo.params.LoginParam;
 import io.netty.util.internal.StringUtil;
-import net.bytebuddy.implementation.bytecode.assign.primitive.PrimitiveWideningDelegate;
+//import net.bytebuddy.implementation.bytecode.assign.primitive.PrimitiveWideningDelegate;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -24,6 +25,7 @@ import java.util.concurrent.TimeUnit;
 @Transactional
 public class LoginServiceImpl implements LoginService {
 
+
     @Autowired
     private SysUserService sysUserService;
 
@@ -32,6 +34,8 @@ public class LoginServiceImpl implements LoginService {
 
     private static final String slat = "YTTEjx!#@";
 
+    @Value("${register.InviteCode}")
+    private String registerInviteCode ;
     /**
      * 登陆
      *
@@ -71,9 +75,10 @@ public class LoginServiceImpl implements LoginService {
         String token = JWTUtils.createToken(sysUser.getId());
         /*5、token放入redies中，redis里设置token：user信息，设置过期时间*/
         String tokenIsExit = redisTemplate.opsForValue().get("TOKEN_" + token);
-
-        redisTemplate.opsForValue().set("TOKEN_"+token, JSON.toJSONString(sysUser),1, TimeUnit.DAYS);
-
+        System.out.println(JSON.toJSONString(sysUser));
+        redisTemplate.opsForValue().set("TOKEN_"+token, JSON.toJSONString(sysUser),12, TimeUnit.HOURS);
+        String s = redisTemplate.opsForValue().get("TOKEN_" + token);
+        System.out.println("==================="+s);
         return Result.success(token);
     }
 
@@ -127,6 +132,13 @@ public class LoginServiceImpl implements LoginService {
         String account = loginParam.getAccount();
         String password = loginParam.getPassword();
         String nickname = loginParam.getNickname();
+        String inviteCode = loginParam.getInviteCode();
+
+        if (!(registerInviteCode.equals(inviteCode))){
+//            System.out.println(inviteCode);
+            //判断邀请码
+            return Result.build(ResultCodeEnum.INVITE_CODE.getCode(), ResultCodeEnum.INVITE_CODE.getMessage());
+        }
         if (StringUtils.isBlank(account) || StringUtils.isBlank(password) || StringUtils.isBlank(nickname)) {
             return Result.build(ResultCodeEnum.PARAM_ERROR.getCode(), ResultCodeEnum.PARAM_ERROR.getMessage());
         }
@@ -154,7 +166,7 @@ public class LoginServiceImpl implements LoginService {
 
         //存入token
         String token = JWTUtils.createToken(sysUser.getId());
-        redisTemplate.opsForValue().set("TOKEN_"+token, JSON.toJSONString(sysUser),1, TimeUnit.DAYS);
+        redisTemplate.opsForValue().set("TOKEN_"+token, JSON.toJSONString(sysUser),12, TimeUnit.HOURS);
 
         return Result.success(token);
     }
